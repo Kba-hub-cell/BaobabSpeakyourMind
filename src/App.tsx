@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { Edit3, Save, Video, Upload, Download, Eye, EyeOff, Mic, Languages, Globe, User, Camera } from 'lucide-react';
-
+import TreesIcon from "./Components/TreesIcon";
 interface SpeechData {
   title: string;
   author: string;
@@ -29,10 +29,11 @@ Animé par l'esprit du baobab — enraciné, résilient et porteur de vie — Kw
 Son parcours reflète une volonté de créer des ponts entre les disciplines, les générations et les communautés. À travers ses engagements, Kwami aspire à être un catalyseur de transformation positive, en inspirant d'autres jeunes à prendre en main leur avenir et celui de l'Afrique.
 
 .`,
-      content: `Mesdames et messieurs,
-Il y a un arbre, majestueux et silencieux, qui résiste aux vents les plus violents et abrite la vie même dans les terres les plus arides. Cet arbre, c'est le baobab. Et aujourd'hui, je me tiens devant vous en tant que jeune Africain, fruit de ses racines profondes et symbole de son essor.
+      content: `Mesdames et messieurs,frères et soeurs d'Afrique.Je tiens aujourd'hui ma plume dans le recoin de ma chambre , tête baissée ,  pour faire entendre les cris d'une jeunesse qui ne veut plus attendre , celle d'un continent qui ne veut plus espérer en silence. Je tiens ma plume pour dessiner un avenir enraciné dans notre histoire, mais tendu vers le ciel comme les branches d'un géant.  
+ Il y a un arbre, majestueux et silencieux, qui résiste aux vents les plus violents et abrite la vie même dans les terres les plus arides. Cet arbre, c'est le baobab. Et aujourd'hui, ce n'est pas devant vous que je me tiens , mais face à un page blanche que je remplis avec l'encre de mes convictions, et la sève d'un engagement.je suis un jeune africain , fruit de ses racines profondes et temoin vivant de son essor. 
 
-Comme le baobab, j'ai grandi là où l'espoir doit souvent rivaliser avec les réalités du quotidien. Pourtant, c'est dans ces défis que j'ai puisé ma force. Résilient face aux obstacles, nourri par les valeurs transmises par ma communauté, et profondément enraciné dans un rêve : celui de voir l'Afrique rayonner, portée par sa jeunesse.
+ Car moi aussi , comme le baobab j'ai grandi dans un sol sec de promesses tenues , mais riche de rêves immenses . J'ai appris à tenir bon quand tout vacille , à croire quand il n'y avait que le doute, à semer ..même sans savoir que la pluie viendrait. C'est dans cette foi silencieuse et tenace que commence mon histoire .
+Comme le baobab, j'ai vécu là où l'espoir doit souvent rivaliser avec les réalités du quotidien, où on assiste à des coupures d’électricité à maintes reprises ,où l’accès à l’eau potable est comme de l’or.Pourtant, c'est dans ces défis que j'ai puisé ma force. Résilient face aux obstacles, nourri par les valeurs transmises par ma communauté, et profondément enraciné dans un rêve : celui de voir l'Afrique rayonner, portée par sa jeunesse.
 
 Mon engagement communautaire a commencé modestement : des ateliers de sensibilisation à l'environnement dans mon quartier, des formations au numérique pour les jeunes de mon école. À chaque sourire, à chaque déclic, j'ai compris que je faisais partie d'une génération qui ne se contente plus de survivre, mais qui s'élève, crée, et transforme.
 
@@ -46,7 +47,15 @@ Nous ne voulons pas simplement hériter du monde. Nous voulons le co-construire.
 
 Pour y parvenir, nous avons besoin d'espaces de formation accessibles et adaptés, de mentors qui nous guident sans nous imposer, de politiques publiques qui croient en notre potentiel. Et surtout, d'une communauté panafricaine unie, au-delà des frontières, pour partager nos savoirs, nos espoirs et nos réussites.
 
-Je rêve d'une Afrique où les jeunes sont les premiers décideurs de leur destinée. Où la technologie sert l'agriculture. Où la santé est connectée. Où l'éducation est un droit, pas un privilège. Moi, je veux être un catalyseur de cette transformation. Créer des ponts entre les disciplines. Initier des projets éducatifs. Et faire de chaque initiative locale une solution globale.
+Je rêve d'une Afrique où les jeunes sont les premiers décideurs de leur destinée. Où la technologie sert l'agriculture. Où la santé est connectée. Où l'éducation est un droit, pas un privilège.
+
+Je rêve d’une Afrique meilleure et prospère. Une Afrique où un jeune à Lomé, à Ouagadougou, à Yaoundé, à N’Djamena pourra créer une startup qui changera le monde, où une jeune fille à Dakar pourra diriger un laboratoire sans qu’on lui demande de baisser les yeux. 
+
+Je rêve d’une Afrique où la politique ne sera plus un instrument d’oppression, mais un levier de justice, d’espoir et de progrès ; où les dirigeants ne seront plus les bourreaux silencieux du peuple, mais les gardiens actifs de sa dignité. Une Afrique où les nations ne se regarderont plus en ennemies, mais en sœurs, 
+
+unies par une histoire partagée, blessées par les mêmes plaies, et portées par un même rêve. Je rêve d’un continent où un enfant ne devra plus marcher des kilomètres pour boire une eau claire, où chaque village aura la lumière non pas seulement du soleil, mais aussi celle d’une électricité stable, fiable, et accessible, 
+
+pour éclairer les foyers et les ambitions. Je rêve d’un pays où l’on n’entendra plus une mère supplier pour un lit d’hôpital, où les soins ne seront plus un luxe réservé à quelques-uns, mais un droit fondamental pour tous. Je rêve d’une école dans chaque quartier, d’un enseignant valorisé dans chaque communauté, d’un ordinateur dans chaque sac à dos, et d’un enfant qui n’aura plus à choisir entre apprendre et survivre. Je rêve d’une Afrique où naître pauvre ne signifie plus être condamné à l’invisible, où chaque regard d’enfant brillera de la certitude qu’il a, lui aussi, un rôle à jouer, une vie à écrire, et un avenir à bâtir. Moi, je veux être un catalyseur de cette transformation. Créer des ponts entre les disciplines. Initier des projets éducatifs. Et faire de chaque initiative locale une solution globale.
 
 J'ai été nourri par des enseignants qui ont cru en moi, par des leaders communautaires qui m'ont tendu la main, par mes parents qui m'ont appris la dignité dans le travail et la foi dans l'avenir. Aujourd'hui, je tends cette main à mon tour. Je transmets, je forme, je crois en d'autres jeunes comme moi.
 
@@ -54,7 +63,9 @@ Nous sommes les baobabs de demain : enracinés dans nos cultures, résistants fa
 
 Nourrissons nos rêves, cultivons notre savoir, et faisons fleurir l'Afrique.
 
-L'avenir n'attend pas. L'avenir, c'est nous.`,
+L'avenir n'attend pas. L'avenir, c'est nous.
+
+`,
       videoUrl: null
     },
     en: {
@@ -66,32 +77,45 @@ L'avenir n'attend pas. L'avenir, c'est nous.`,
 Inspired by the spirit of the baobab tree — grounded, resilient, and life-giving — Kwami has led several local projects focused on environmental awareness, digital training, and youth empowerment. He strongly believes that equitable access to education and future-ready skills is key to unlocking Africa's full potential.
 
 His journey reflects a deep commitment to building bridges across disciplines, generations, and communities. Through his work, Kwami aspires to be a catalyst for positive transformation, inspiring young people to take ownership of their future — and of Africa's.`,
-      content: `Ladies and gentlemen,
-There is a tree, majestic and silent, that withstands the most violent winds and shelters life even in the most arid lands. This tree is the baobab. And today, I stand before you as a young African, fruit of its deep roots and symbol of its rise.
+      content: `Ladies and gentlemen, brothers and sisters of Africa. Today, I hold my pen in the corner of my room, head bowed, to give voice to the cries of a youth that no longer wants to wait, of a continent that no longer wants to hope in silence. I hold my pen to sketch a future rooted in our history, but reaching toward the sky like the branches of a giant.  
+ There is a tree, majestic and silent, that withstands the strongest winds and shelters life even in the most arid lands. That tree is the baobab. And today, I am not standing before you, but facing a blank page that I am filling with the ink of my convictions and the sap of my commitment. I am a young African, the fruit of its deep roots and a living witness to its growth. 
 
-Like the baobab, I grew up where hope must often compete with daily realities. Yet, it is from these challenges that I drew my strength. Resilient in the face of obstacles, nourished by the values transmitted by my community, and deeply rooted in a dream: to see Africa shine, carried by its youth.
+ For I too, like the baobab, grew up in dry soil of broken promises, but rich in immense dreams. I learned to hold on when everything was shaking, to believe when there was only doubt, to sow... even without knowing if the rain would come. It is in this silent and tenacious faith that my story begins.
+Like the baobab tree, I have lived where hope often has to compete with the realities of everyday life, where there are frequent power cuts, where access to drinking water is like gold. Yet it is in these challenges that I have drawn my strength. Resilient in the face of obstacles, nourished by the values passed down by my community, and deeply rooted in a dream: to see Africa shine, carried by its youth.
 
-My community engagement began modestly: environmental awareness workshops in my neighborhood, digital training for young people at my school. With each smile, each breakthrough, I understood that I was part of a generation that no longer settles for survival, but rises, creates, and transforms.
+My community involvement began modestly: environmental awareness workshops in my neighborhood, digital training for young people at my school. With every smile, with every lightbulb moment, I understood that I was part of a generation that is no longer content to merely survive, but is rising up, creating, and transforming.
 
-What revolts me? It's the inequality of access to quality education. Too many young African talents are hindered by structural barriers: poverty, lack of resources, or absence of support. Yet, a youth deprived of knowledge is a continent deprived of a future.
+What upsets me? It's the inequality of access to quality education. Too many talented young Africans are held back by structural barriers: poverty, lack of resources, or lack of support. But a youth deprived of knowledge is a continent deprived of a future.
 
-But I believe in an Africa where every child has access not only to a classroom, but also to the Internet, to digital tools, to programs that develop critical thinking, creativity, and entrepreneurial spirit.
+But I believe in an Africa where every child has access not only to a classroom, but also to the internet, digital tools, and programs that develop critical thinking, creativity, and entrepreneurial spirit.
 
-By 2030, we will be nearly half of the world's youth. This is not a number, it's a force. A power capable of driving profound transformations, whether climatic, social, or economic. Provided we are heard. Provided we are equipped.
+By 2030, we will make up nearly half of the world's youth. That's not a number, it's a force. A power capable of driving profound transformations, whether climatic, social, or economic. Provided that we are listened to. Provided that we are equipped.
 
-We don't simply want to inherit the world. We want to co-build it. Through innovation. Through solidarity. And above all, through unwavering faith in our capabilities.
+We don't just want to inherit the world. We want to co-build it. Through innovation. Through solidarity. And above all, through an unshakeable faith in our abilities.
 
-To achieve this, we need accessible and adapted training spaces, mentors who guide us without imposing on us, public policies that believe in our potential. And above all, a united pan-African community, beyond borders, to share our knowledge, our hopes, and our successes.
+To achieve this, we need accessible and appropriate training spaces, mentors who guide us without imposing themselves on us, and public policies that believe in our potential. And above all, we need a united pan-African community, beyond borders, to share our knowledge, our hopes, and our successes.
 
-I dream of an Africa where young people are the primary decision-makers of their destiny. Where technology serves agriculture. Where health is connected. Where education is a right, not a privilege. I want to be a catalyst for this transformation. Create bridges between disciplines. Initiate educational projects. And make every local initiative a global solution.
+I dream of an Africa where young people are the primary decision-makers of their own destiny. Where technology serves agriculture. Where healthcare is connected. Where education is a right, not a privilege.
 
-I was nourished by teachers who believed in me, by community leaders who extended their hand to me, by my parents who taught me dignity in work and faith in the future. Today, I extend this hand in turn. I transmit, I train, I believe in other young people like me.
+I dream of a better, prosperous Africa. An Africa where a young person in Lomé, Ouagadougou, Yaoundé, or N'Djamena can create a startup that will change the world, where a young girl in Dakar can run a laboratory without being asked to lower her gaze. 
+
+I dream of an Africa where politics is no longer an instrument of oppression, but a lever for justice, hope, and progress; where leaders are no longer the silent executioners of the people, but the active guardians of their dignity. An Africa where nations no longer see each other as enemies, but as sisters, 
+
+united by a shared history, wounded by the same wounds, and carried by the same dream. I dream of a continent where children will no longer have to walk miles to drink clean water, where every village will have light not only from the sun, but also from stable, reliable, and accessible electricity, 
+
+to light homes and ambitions. I dream of a country where we will no longer hear a mother begging for a hospital bed, where healthcare will no longer be a luxury reserved for the few, but a fundamental right for all. I dream of a school in every neighborhood, a valued teacher in every community, a computer in every backpack, and a child who no longer has to choose between learning and surviving.
+
+I dream of an Africa where being born poor no longer means being condemned to invisibility, where every child's eyes will shine with the certainty that they, too, have a role to play, a life to write, and a future to build. I want to be a catalyst for this transformation. Building bridges between disciplines. Initiating educational projects. And turning every local initiative into a global solution.
+
+I was nurtured by teachers who believed in me, by community leaders who reached out to me, by my parents who taught me dignity in work and faith in the future. Today, I am reaching out in turn. I pass on my knowledge, I train others, I believe in other young people like me.
 
 We are the baobabs of tomorrow: rooted in our cultures, resistant to storms, and bearers of life for future generations.
 
-Let us nourish our dreams, cultivate our knowledge, and make Africa flourish.
+Let us nurture our dreams, cultivate our knowledge, and make Africa flourish.
 
-The future doesn't wait. The future is us.`,
+The future cannot wait. The future is us.
+
+.`,
       videoUrl: null
     }
   });
@@ -158,6 +182,7 @@ The future doesn't wait. The future is us.`,
   const currentSpeech = speechData[currentLanguage];
 
   return (
+    
     <div className="min-h-screen relative">
       {/* Baobab Background */}
       <div 
@@ -175,7 +200,7 @@ The future doesn't wait. The future is us.`,
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-3">
                 <div className="bg-gradient-to-r from-amber-600 to-orange-600 p-3 rounded-xl shadow-lg">
-                  <Mic className="w-6 h-6 text-white" />
+                  <TreesIcon className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <h1 className="text-2xl font-bold text-white">Speech Showcase</h1>
